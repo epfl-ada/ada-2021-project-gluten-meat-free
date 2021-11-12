@@ -1,15 +1,13 @@
-# IPSE DIXIT or This is a Man's word (go check out the song This is a Man's world)
+# This is a Man's word
 
 ## Abstract: 
 
 In the 21st century gender inequality is still a global issue, which is evident in media content: women are under-represented with respect to men [1].
 
-[[1](https://www.un.org/womenwatch/beijing15/Women_and_the_media_preliminary_brief.pdf)] *Women and the Media*, UN department of Public Information, 2010
-
-We aim to quantify this unbalance by analyzing the Quotebank dataset. First, we will investigate the distribution of women across the most common occupations, globally. 
+We aim to quantify this unbalance by analyzing the Quotebank dataset. Our analysis will be directed towards the presence of women across countries and across the most occuring topics in the quotes. First, we will investigate the distribution of quoted women across the most common occupations, globally. 
 Then, we will inspect the presence of any correlations between the speaker's success on the media, measured in terms of number of occurrences of the corresponding quotation, 
 and the  sociocultural and economic development of the speaker's original country, described by the Human Development Index (HDI). 
-Finally, we plan to extract keywords from the quotations of the dataset, cluster them into topics and observe in what fields 
+Finally, we will extract keywords from the quotations, cluster them into topics and observe in which fields 
 men's voices dominate with respect to women. Ideally, all these factors could be predictors for the success of a quote on the media.
 
 
@@ -17,51 +15,55 @@ men's voices dominate with respect to women. Ideally, all these factors could be
 -	Are women’s speech and opinions more valued and represented in the media in developed countries? 
 -	How are the quotations distributed across countries based on the gender?
 -	Are women less represented in high-placed occupations in developing countries? 
--	Do men’s voices dominate in “hard” quotes with topics about politics etc?
--	Can we predict and explain the success of a quote based on some features such as the sex, occupation and nationality of the speaker?
+-	Can we classify topics into male-oriented and female-oriented? Do men’s voices dominate in politics?
+-	Can we predict and explain the success of a quote based on features such as sex, occupation and nationality of the speaker?
 
 ## Proposed additional datasets: 
 The main dataset we will be using is the Quotebank dataset with millions of quotes and attributed speakers published in the English News between 2015 and 2020, enriched the original Quotebank data with 
 additional metadata about the speakers in the dataset, notably providing his/her nationality, religion, political party etc.
 
-In addition to the Quotebank dataset we will use the Human Development Index dataset from the 2020 report imported from Wikipedia [2], which assigns to 189 countries a score from 0 to 1 based on composite statistics 
-of life expectancy, education and income indices. We will use this dataset to stratify the speaker’s nationality countries in the Quotebank dataset  by the range in which their HDI falls 
+In addition to the Quotebank dataset, we will use the Human Development Index dataset from the 2020 report imported from United Nations website [2], which assigns to 189 countries a score from 0 to 1 based on the composite statistics 
+of life expectancy, education and income indices. We will use this dataset to stratify the speaker’s nationality in the Quotebank dataset by the range in which their HDI falls 
 from very high to low development.
-[[2] (https://en.wikipedia.org/wiki/Human_Development_Index)]
 
 ## Methods: 
--	In order to work on such huge data, we decided to read the files by chunks, to save the relevant information for further analyses and graphs locally and to clear the chunk 
-from the memory after terminating the processing on it. So far, we have executed the notebook on Google Cholab.
--	Some data cleaning and data preprocessing is applied to each chunk: those quotes without attributed speaker were dropped since for the further analyses we will need as 
-features the speaker’s nationality, occupation and gender. Additional static and interactive plots to show the distribution of these features will be implemented.
-- Tests for correlations will be performed to assess any relationships between the features and the success of the quote.
+- In order to tame the dataset size, we read the files by chunks while making sure that our process does not leak memory and does not exceede the available resources. As we read chunk by chunk, we aggregate the relevant information for further analyses and graphs. So far, we have executed the notebook on Google Colab.
+- For data cleaning and preprocessing part we discard quotes without attributed speakers since it crucial to obtain further metadata such as the speaker’s nationality, occupation and gender. Additional static and interactive plots to show the distribution of these features will be implemented. While it would be thrilling to embark on analysis of inequality with respect to LGBT speakers, we do not have sufficient data to draw any conclusions from it, thus we also discard it and leave only male and female speakers.
+- We will perform tests for correlations to assess any relationships between the features and the success of the quote, hoping to see if gender plays a significant role here.
 -	The keywords are extracted from the quotations by applying some basic functions from the natural language toolkit (nltk) library including tokenization of the sentence, exclusion of stopwords and lemmatization.
--	Machine learning techniques for clustering (e.g Latent Dirichlet Allocation) will be tested to identify topics from the quotes content. 
+-	Natural language processing techniques for clustering (e.g Latent Dirichlet Allocation) will be assessed to identify topics groups from the quotes content. 
 
-## Proposed timeline: 
+## Internal Milestones and Timeline:
 
--	12th November: complete data loading, merging, pre-processing and writing of functions for the extractions of most occurring keywords in quotes. 
+- *Dataset acquaintance* (12th November)
+    - data processing suitable to the dataset size
+    - merging other resources
+    - pre-processing, data cleaning
+    - inspecting the most occurring keywords in quotes. 
 
--	19th November: create additional graphs, and start the correlation analyses. 
+- *Correlation analyses* (19th November)
+    - assess available tools for correlation analyses
+    - plot graphs and draw conclusions from results
 
--	26th November - 4th December : model fitting for prediction of number of occurrences, clustering of keywords in topics per male/female 
+- *Model fitting* (4th December)
+    - predict the success of a quote based on selected features (gender, nationality)
+    - classify the keywords into topics using NLP methods
+    - derive presence of male and female across extracted topics
 
--	4th December – 16th December: built datastory and website, beautify the page and clean the code 
+- *Story telling and presentation* (14th December)
+    - built datastory and website
+    - beautify the page, ensure graphs are readable by external audience 
+    - organize and clean the code structure
 
--	Friday 17th December: Milestone 3 deadline 
+-	*Final touches and polishing* (Friday 17th December)
 
-## Organization within the team: 
-
-- Caterina: 
-
-- Mateusz: 
-
-- Sofia: 
-
-- Victor: 
 
 ## Questions for the TAs: 
 
 
 
+## Bibliography:
 
+[[1](https://www.un.org/womenwatch/beijing15/Women_and_the_media_preliminary_brief.pdf)] *Women and the Media*, UN department of Public Information, 2010
+
+[[2](http://hdr.undp.org/en/content/download-data)] United Nations HDI report download page
