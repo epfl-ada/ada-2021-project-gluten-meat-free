@@ -4,12 +4,7 @@
 
 In the 21st century gender inequality is still a global issue, which is evident in media content: women are under-represented with respect to men [1].
 
-We aim to quantify this unbalance by analyzing the Quotebank dataset. Our analysis will be directed towards the presence of women across countries and across the most occuring topics in the quotes. First, we will investigate the distribution of quoted women across the most common occupations, globally. 
-Then, we will inspect the presence of any correlations between the speaker's success on the media, measured in terms of number of occurrences of the corresponding quotation, 
-and the  sociocultural and economic development of the speaker's original country, described by the Human Development Index (HDI). 
-Finally, we will extract keywords from the quotations, cluster them into topics and observe in which fields 
-men's voices dominate with respect to women. Ideally, all these factors could be predictors for the success of a quote on the media.
-
+We aim to quantify this unbalance by analyzing the Quotebank dataset. Our analysis will be directed towards the presence of women throughout countries and the most occuring topics. First, we will investigate the distribution of quoted women across the most common occupations, globally. Then, we will inspect the presence of any correlations between the speaker's success on the media, measured in terms of number of occurrences of the corresponding quotation, and the sociocultural and economic development of the speaker's country, described by Human Development Index. Finally, we will extract keywords from the quotations, cluster them into topics and observe in which fields men's voices dominate with respect to women. All these factors could be predictors for the success of a quote on the media.
 
 ## Research questions: 
 -	Are women’s speech and opinions more valued and represented in the media in developed countries? 
