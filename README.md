@@ -100,7 +100,7 @@ We fit a **linear regression model** to explain the number of occurrences of a q
 - Mateusz: 1, 2, 4, 9
 - Sofia: 3, 8, 9, graphs for 4
 - Caterina: 5, 6, 8, 9
-- Victor: 3, 7
+- Victor: helped with 3, 7
 
 ## Bibliography:
 
