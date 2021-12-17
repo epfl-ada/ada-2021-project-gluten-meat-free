@@ -72,7 +72,7 @@ Two **two-sample Kolmogorov-Smirnov tests** will be performed to help us compare
 
 ### Analyses of correlations
 
-We will conduct a correlation analysis between the gender and occupation categorical variables with a **chi-squared test of independence** combined with **Crammer's scores**. This approach allows us to assess both the presence and the strength of the relationship.
+We will conduct a correlation analysis between the gender and occupation categorical variables with a **chi-squared test of independence** combined with **Cramer's scores**. This approach allows us to assess both the presence and the strength of the relationship.
 
 
 ### Linear Regression modelling
