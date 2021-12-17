@@ -31,11 +31,11 @@ In addition to the Quotebank dataset, we will use the **Human Development Index 
 
 ## Methods:
 
-### Reading and loading the dataset
+### Reading and loading the dataset [1]
 
 - In order to tame the dataset size, we read the files by **chunks** while making sure that our process does not leak memory and does not exceede the available resources. As we read chunk by chunk, we clean the dataset and extract only the relevant information that we need in the further processing. Processing the whole Quotebank dataset takes a lot of time, thus, we save intermediate results into **pickle file**, native python's representation of serialized objects. This way, we are able to quickly load the whole pre-processed dataset into memory on Google Colab notebook.
 
-### Data cleaning and preprocessing
+### Data cleaning and preprocessing [2]
 
 This section involves two main tasks: 
 1. Features cleaning
@@ -56,29 +56,33 @@ We will follow this pipeline to extract keywords from the quotations:
 - Remove **stopwords** and terms/bigrams from a manualy crafted list of words
 - **Lemmatize** the remaining words.
 
-### Data visualization and exploratory data analysis
+### Data visualization and exploratory data analysis [3]
 
 We will use static and interactive plots to explore the data. 
 More specifically, we will look at the distribution of quotes stratified by gender and/or occupation globally, and among countries grouped based on their development index. In order to do so, we will use **interactive histograms** to explore the evolution over the years, **pie charts** and **line plots**.
 
-### Topic extraction and classification
+### Topic extraction and classification [4]
 
 We convert our keywords series into **bags of words** and use it to train a **Latent Dirichlet Allocation (LDA) model** for topic detection.
 **Hyperparameter tuning** will be performed to obtain a high topic coherence score allowing to improve the quality of the learned topics.
 The extracted topics will be visualized with **word clouds** graphs, their frequency with  **horizontal bar plots**, and their distribution across gender with **pie charts**.
 
-### Statistical tests
+### Statistical tests [5]
 
 Two **two-sample Kolmogorov-Smirnov tests** will be performed to help us compare the success of men vs women speakers, and the success of women from developed vs developing countries.
 
-### Analyses of correlations
+### Analyses of correlations [6]
 
 We will conduct a correlation analysis between the gender and occupation categorical variables with a **chi-squared test of independence** combined with **Cramer's scores**. This approach allows us to assess both the presence and the strength of the relationship.
 
 
-### Linear Regression modelling
+### Linear Regression modelling [7]
 
 We fit a **linear regression model** to explain the number of occurrences of a quote, our outcome variable, with the previously studied features. We analyse the coefficients to see what affects the number of citations. 
+
+### Story Telling [8]
+
+### Website development [9]
 
 ## Internal Milestones and Timeline:
 
@@ -93,6 +97,10 @@ We fit a **linear regression model** to explain the number of occurrences of a q
 - *Final touches and polishing* (Friday 17th December)
 
 ## Organization within the team: 
+- Mateusz: 1, 2, 4, 9
+- Sofia: 3, 8, 9, graphs for 4
+- Caterina: 5, 6, 7, 8, 9
+- Victor: 3, 7
 
 ## Bibliography:
 
