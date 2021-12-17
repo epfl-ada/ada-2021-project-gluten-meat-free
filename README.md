@@ -33,7 +33,7 @@ In addition to the Quotebank dataset, we will use the **Human Development Index 
 
 ### Reading and loading the dataset [1]
 
-- In order to tame the dataset size, we read the files by **chunks** while making sure that our process does not leak memory and does not exceede the available resources. As we read chunk by chunk, we clean the dataset and extract only the relevant information that we need in the further processing. Processing the whole Quotebank dataset takes a lot of time, thus, we save intermediate results into **pickle file**, native python's representation of serialized objects. This way, we are able to quickly load the whole pre-processed dataset into memory on Google Colab notebook.
+- In order to tame the dataset size, we read the files in **chunks** while making sure that our process does not leak memory and does not exceed the available resources. As we read chunk by chunk, we clean the dataset and extract only the relevant information that we need in the further processing. Processing the whole Quotebank dataset takes a lot of time, thus, we save intermediate results into **pickle file**, native python's representation of serialized objects. This way, we are able to quickly load the whole preprocessed dataset into memory on Google Colab notebook.
 
 ### Data cleaning and preprocessing [2]
 
@@ -53,7 +53,7 @@ We will follow this pipeline to extract keywords from the quotations:
 - **Tokenize** quotes into a list of words.
 - Train a model to find **bigrams** among the tokenized quotes and retain the most relevant ones.
 - Apply a part-of-speech tagger (**POS-tagger**) to the extracted sequence of words to mainy retain nouns and adjectives.
-- Remove **stopwords** and terms/bigrams from a manualy crafted list of words
+- Remove **stopwords** and terms/bigrams from a manually crafted list of words
 - **Lemmatize** the remaining words.
 
 ### Data visualization and exploratory data analysis [3]
@@ -76,11 +76,11 @@ Two **two-sample Kolmogorov-Smirnov tests** will be performed to help us compare
 We will conduct a correlation analysis between the gender and occupation categorical variables with a **chi-squared test of independence** combined with **Cramer's scores**. This approach allows us to assess both the presence and the strength of the relationship.
 
 
-### Linear Regression modelling [7]
+### Linear Regression modeling [7]
 
 We fit a **linear regression model** to explain the number of occurrences of a quote, our outcome variable, with the previously studied features. We analyse the coefficients to see what affects the number of citations. 
 
-### Story Telling [8]
+### Storytelling [8]
 
 ### Website development [9]
 
