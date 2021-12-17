@@ -76,7 +76,7 @@ We will conduct a correlation analysis between the gender and occupation categor
 
 ### Linear Regression modelling
 
-We fit a **linear regression model** and **gradient boosting regressor** to explain the number of occurrences of a quote, our outcome variable, with the previously studied features. An analysis of the coefficients is performed. 
+We fit a **linear regression model** to explain the number of occurrences of a quote, our outcome variable, with the previously studied features. We analyse the coefficients to see what affects the number of citations. 
 
 ## Internal Milestones and Timeline:
 
