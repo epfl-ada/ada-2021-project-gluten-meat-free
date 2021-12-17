@@ -1,7 +1,9 @@
 # This is a Man's word
 
 ### Authors: Caterina Calisti, Sofia Leonova, Mateusz Urbańczyk, Victor Amiot. 
+
 Link to our story web page: https://tomatosoup97.github.io/epfl-ada--project-datastory/
+
 Web page repository: https://github.com/Tomatosoup97/epfl-ada--project-datastory
 
 ## Abstract: 
