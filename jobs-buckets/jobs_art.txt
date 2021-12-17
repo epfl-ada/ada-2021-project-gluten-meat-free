@@ -1,0 +1,116 @@
+actor
+writer
+film actor
+singer
+television actor
+painter
+composer
+stage actor
+screenwriter
+musician
+film producer
+film director
+autobiographer
+guitarist
+record producer
+voice actor
+recording artist
+comedian
+novelist
+author
+pianist
+lyricist
+poet
+photographer
+sculptor
+dancer
+artist
+fashion designer
+drummer
+disc jockey
+designer
+illustrator
+rapper
+visual artist
+choreographer
+playwright
+essayist
+theater director
+film editor
+non-fiction writer
+biographer
+stand-up comedian
+multi-instrumentalist
+patron of the arts
+performing artist
+literary critic
+cinematographer
+jewelry designer
+film score composer
+bassist
+comics artist
+child actor
+character actor
+jazz musician
+opera singer
+pornographic actor
+music executive
+graphic designer
+drawer
+travel writer
+music video director
+vocalist
+art historian
+fashion entrepreneur
+fashion photographer
+bass guitarist
+mime artist
+banjoist
+dressmaker
+comics writer
+saxophonist
+filmmaker
+art collector
+musicologist
+violinist
+dub actor
+rock musician
+music producer
+ballet dancer
+music critic
+music arranger
+musical theatre actor
+street artist
+signwriter
+museum director
+cultural critic
+installation artist
+creator
+improviser
+music director
+audio book narrator
+pop singer
+trumpeter
+magician
+grand couturier
+documentary filmmaker
+film critic
+art critic
+club DJ
+electronic musician
+theatrical producer
+preface author
+crime writer
+art educator
+video artist
+conceptual artist
+art dealer
+literary historian
+performance artist
+artistic director
+graphic artist
+rock drummer
+dramaturge
+textile artist
+circus performer
+theatre manager

@@ -1,0 +1,49 @@
+politician
+lawyer
+businessperson
+diplomat
+entrepreneur
+military personnel
+statesperson
+economist
+military officer
+political scientist
+judge
+political writer
+banker
+business executive
+executive producer
+investment banker
+official
+chief executive officer
+police officer
+political adviser
+investor
+political activist
+vice president
+monarch
+financier
+Queen's Counsel
+advocate
+political candidate
+minister
+police officer (Beamter)
+military physician
+political pundit
+business manager
+magistrate
+party secretary
+bank manager
+organizational founder
+financial adviser
+president
+business magnate
+deputy
+governor
+financial analyst
+justice of the peace
+business consultant
+military leader
+legal counsel
+taxonomist
+
