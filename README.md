@@ -2,6 +2,7 @@
 
 ### Authors: Caterina Calisti, Sofia Leonova, Mateusz Urbańczyk, Victor Amiot. 
 Link to our story web page: https://tomatosoup97.github.io/epfl-ada--project-datastory/
+Web page repository: https://github.com/Tomatosoup97/epfl-ada--project-datastory
 
 ## Abstract: 
 
@@ -12,14 +13,13 @@ speaker's countries of origin and then stratify them by their sociocultural and 
 
 ## Research questions:
 
--   How are the quotations distributed across the 10 most common speaker’s countries based on gender across the years?
+-   What is the evolution of the gender gap? Are we really going towards gender equality?
+-   Are women less represented in high-placed occupations with respect to men?
 -   Are women speakers from developing countries less represented than those from developed ones?
+-   Can we classify topics into male-oriented and female-oriented? Do men’s voices dominate in politics?
 -   Are women-attributed quotes less successful than men-attributed quotes?
--   Are quotes attributed to women from developing countries less successful than those attributed to women from developed countries?
--   What is the evolution of the gender gap in countries with a different development level? Are we really going towards gender equality?
--   Are women less represented in high-placed occupations with respect to men?  
--	 Can we classify topics into male-oriented and female-oriented? Do men’s voices dominate in politics?
--	 Can we predict and explain the success of a quote based on features such as sex, occupation and nationality of the speaker?
+-   What's the influence of development level on the quote's success?
+-   Can we predict and explain the success of a quote based on features such as sex, occupation and nationality of the speaker?
 
 ## Proposed additional datasets:
 
@@ -31,8 +31,7 @@ In addition to the Quotebank dataset, we will use the **Human Development Index 
 
 ### Reading and loading the dataset
 
-- In order to tame the dataset size, we read the files by **chunks** while making sure that our process does not leak memory and does not exceede the available resources. As we read chunk by chunk, we aggregate the relevant information for further analyses and graphs. We execute the notebook on Google Colab.
-- We preprocess the chunks for a given year, save them in a **pickle format file**, then free the RAM memory. Then, we concatenate the files from the same year into a unique pickle file and repeat these operations for every Quotebank data file specific for the years between 2015 and 2020. Finally we concatenate the preprocessed files from all the years into a unique file, also saved in picke format. 
+- In order to tame the dataset size, we read the files by **chunks** while making sure that our process does not leak memory and does not exceede the available resources. As we read chunk by chunk, we clean the dataset and extract only the relevant information that we need in the further processing. Processing the whole Quotebank dataset takes a lot of time, thus, we save intermediate results into **pickle file**, native python's representation of serialized objects. This way, we are able to quickly load the whole pre-processed dataset into memory on Google Colab notebook.
 
 ### Data cleaning and preprocessing
 
@@ -43,16 +42,16 @@ We discard those quotes with:
 - Missing speaker or speaker probability of quote attribution is lower than  60 %. 
 - Missing speaker's gender or gender different from male and female. 
 - Missing speaker's nationality. 
-- Number of occurrences = 1
+- Number of occurrences equal to 1
 
 2. Processing of quotes
 
 We will follow this pipeline to extract keywords from the quotations: 
-- Normalize quotes: they are **lower-cased** and **punctuation marks** and **extra white** spaces are removed. 
+- Normalize quotes: put into **lower-case**, remove **punctuation marks** and extra **whitespaces**
 - **Tokenize** quotes into a list of words.
 - Train a model to find **bigrams** among the tokenized quotes and retain the most relevant ones.
-- Apply a part-of-speech tagger (**POS-tagger**) to the extracted sequence of words to mainy retain only nouns and adjectives.
-- Remove **stopwords** and a list of manually specified terms/bigrams to ignore.
+- Apply a part-of-speech tagger (**POS-tagger**) to the extracted sequence of words to mainy retain nouns and adjectives.
+- Remove **stopwords** and terms/bigrams from a manualy crafted list of words
 - **Lemmatize** the remaining words.
 
 ### Data visualization and exploratory data analysis
