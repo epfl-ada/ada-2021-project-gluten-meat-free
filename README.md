@@ -6,6 +6,28 @@ Link to our story web page: https://tomatosoup97.github.io/epfl-ada--project-dat
 
 Web page repository: https://github.com/Tomatosoup97/epfl-ada--project-datastory
 
+## Prologue
+
+Majority of the graphs that we have created are interactive, done with plotly
+library, which displayes them as html objects. However, perhaps due to security
+concerns, github does not render external html (and embeded JavaScript), and
+enforces all of the content to be static, thus, leaving our notebook in the
+repository (almost) plot-less.
+
+Therefore, our decision, hopefully positively respected by the work reviewers, is
+to put a link to a Google Colab revision with all of the graphs rendered.
+
+[The link is available here](https://colab.research.google.com/drive/1l1w-wtUSry80GA1O3q9vyb9fNcUPg1oK#revisionId=0B_xOblNfd4YJMUZQWTZFVkpzOGcwTGhQUmZNUWpGb3NCQVhrPQ&scrollTo=oiBmOyW90e-0)
+
+All of the code and static content is the same as of the notebook uploaded on the
+github. Moreover, as you may notice, we have pinned a google revision version hash
+to prove the immutability of the content from the time we wrote the text.
+
+Alternative options included converting all graphs to svg or posting html
+of the interactive plots on a separate website, both of which found to be rather
+sub-optimal. Many (but not all) of the interactive plots you may actually see
+on the [data story webiste](https://tomatosoup97.github.io/epfl-ada--project-datastory/).
+
 ## Abstract: 
 
 In the 21st century gender inequality is still a global issue, which is evident in media content: women are under-represented with respect to men [1].
